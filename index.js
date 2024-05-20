@@ -49,7 +49,7 @@ app.post("/url-shortner", (req, res) => {
   fs.writeFileSync(urlFilePath, JSON.stringify(urlFileDatajson, null, 2))
   res.json({
        success: true,
-       data: `https://sortner-url.vercel.app/${shortUrl}`,
+       data: `https://localhost:8080/${shortUrl}`,
   });
 });
 
